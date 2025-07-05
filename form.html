@@ -53,6 +53,19 @@
 <script>
 const form = document.getElementById('studentform');
 const responseEl = document.getElementById('response');
+form.onsubmit = e =>{
+  e.preventDefault();
+fetch(''
+{
+  method: 'POST',
+  body: new URLSearchParams(new FormData(form))
+})
+  .then(() => {
+  renponseEl.texContent ="ส่งข้อมูลสำเร็จ ขอบคุณ";
+  form.reset();
+})
+  .catch(() => responseEl.textContent="เกิดข้อผิดพลาด ลองใหม่");
+};
 </script>
   
   </center>
