@@ -55,7 +55,7 @@ const form = document.getElementById('studentform');
 const responseEl = document.getElementById('response');
 form.onsubmit = e =>{
   e.preventDefault();
-fetch(''
+fetch('https://script.google.com/macros/s/AKfycbwp5Jwwbo6YqTG2WzTaIscrW9hjDUdnT8o-1dNoa6BL_MhWP-54rfjI8fFCvoro9abp/exec',
 {
   method: 'POST',
   body: new URLSearchParams(new FormData(form))
