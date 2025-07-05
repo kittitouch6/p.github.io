@@ -57,11 +57,11 @@ form.onsubmit = e =>{
   e.preventDefault();
 fetch('https://script.google.com/macros/s/AKfycbxK9jyLMZNCxEvr1bEsCvMF-hYHzDC3D3zhzt5OfE9k6CrthJ7sTY6WKYfRsr-xoBQ/exec',
 {
-  method: 'POST',
+ method: 'POST',
   body: new URLSearchParams(new FormData(form))
 })
   .then(() => {
-  renponseEl.texContent ="ส่งข้อมูลสำเร็จ ขอบคุณ";
+  responseEl.textContent ="ส่งข้อมูลสำเร็จ ขอบคุณ";
   form.reset();
 })
   .catch(() => responseEl.textContent="เกิดข้อผิดพลาด ลองใหม่");
