@@ -66,11 +66,47 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ejXNjMc9Wcc?si=_CEombc1IOJX9Xw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </center>
   </section>
-
+    
+  <section>
+  <h1><mark>แบบทดสอบความรู้วันสันติภาพไทย</mark></h1>
+  <p>1. วันสันติภาพไทยตรงกับวันที่เท่าไหร่ของทุกปี?</p>
+  <button onclick="checkAnswer(this,true)">16 สิงหาคม</button>
+  <button onclick="checkAnswer(this,false)">12 สิงหาคม</button>
+  <button onclick="checkAnswer(this,false)">5 สิงหาคม</button>
+  <button onclick="checkAnswer(this,false)">24 สิงหาคม</button>
+  </section>
+  <section>
+  <p>2. ใครเป็นหัวหน้าขบวนการเสรีไทยที่มีบทบาทสำคัญในวันสันติภาพไทย?</p>
+  <button onclick="checkAnswer(this,false)">นายทวี บุณยเกตุ</button>
+  <button onclick="checkAnswer(this,true)">นายปรีดี พนมยงค์</button>
+  <button onclick="checkAnswer(this,false)">จอมพล ป. พิบูลสงคราม</button>
+  <button onclick="checkAnswer(this,false)">รัชกาลที่ 8</button>
+  </section>
+  <section>
+  <p>3. เหตุการณ์ใดเป็นสาเหตุให้มีการประกาศสันติภาพไทย?</p>
+  <button onclick="checkAnswer(this,true)">การสิ้นสุดสงครามโลกครั้งที่ 2</button>
+  <button onclick="checkAnswer(this,false)">การประกาศรัฐธรรมนูญ</button>
+  <button onclick="checkAnswer(this,false)">การปฏิวัติสยาม</button>
+  <button onclick="checkAnswer(this,false)">การสวรรคตของรัชกาลที่ 8</button>
+  </section>
+  <section>
+  <p>4. ขบวนการเสรีไทยมีบทบาทสำคัญในด้านใด?</p>
+  <button onclick="checkAnswer(this,false)">การรณรงค์เลือกตั้ง</button>
+  <button onclick="checkAnswer(this,true)">การกอบกู้เอกราชและอธิปไตยของไทย</button>
+  <button onclick="checkAnswer(this,false)">การสร้างโครงสร้างพื้นฐาน</button>
+  <button onclick="checkAnswer(this,false)">การปฏิรูปการศึกษา</button>
+  </section>
+  <section>
+  <p>5. วัตถุประสงค์ของการจัดงานวันสันติภาพไทยคือข้อใด?</p>
+  <button onclick="checkAnswer(this,false)">เฉลิมฉลองการขึ้นครองราชย์</button> 
+  <button onclick="checkAnswer(this,true)">รำลึกและเผยแพร่ความสำคัญของสันติภาพ</button>
+  <button onclick="checkAnswer(this,false)">ประกาศสงครามกับประเทศอื่น</button>
+  <button onclick="checkAnswer(this,false)">เฉลิมฉลองปีใหม่</button>
+  </section>
   <script>
     function checkAnswer(btn,correct)
       {btn.classList.add(correct?'correct':'incorrect');
-       btn.parenElement.queryselectorAll('button').forEach(b=b.disable=true);}
+       btn.parenElement.queryselectorAll('button').forEach(b=>b.disable=true);}
   </script>
   </body>
 </html>
